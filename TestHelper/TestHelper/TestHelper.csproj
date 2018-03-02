@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>ConnelHooley.TestHelper.Abstractions</AssemblyName>
-    <RootNamespace>ConnelHooley.TestHelper.Abstractions</RootNamespace>
+    <AssemblyName>ConnelHooley.TestHelper</AssemblyName>
+    <RootNamespace>ConnelHooley.TestHelper</RootNamespace>
 
     <Authors>Connel Hooley</Authors>
     <Product>Test Helper</Product>

@@ -1,5 +1,5 @@
 # TestHelper
-A class to randomly generate values. Useful for unit tests.
+A class to randomly generate values. Useful for unit tests. Powered by [AutoFixture](https://github.com/AutoFixture/AutoFixture).
 
 > Install-Package ConnelHooley.TestHelper
 
@@ -174,7 +174,7 @@ Returns a value created by `AutoFixture`.
 var randomMailAddress = TestHelper.Generate<MailAddress>();
 ```
 
-To find out how to configure the `AutoFixture` instance inside the `TestHelper` please go the Configuration section.
+To find out how to configure the `AutoFixture` instance inside the `TestHelper` please go the [Configuration](#configuration) section.
 
 ## Configuration
 There are two ways of configuring the TestHelper.

@@ -174,6 +174,17 @@ You can also specify values to exclude:
 var randomWeekDay = TestHelper.GenerateEnum(DayOfWeek.Saturday, DayOfWeek.Sunday);
 ```
 
+## GetRandomTypeGenerator
+Returns a function that in turn returns random types.
+
+``` csharp
+var typeGenerator = TestHelper.GetRandomTypeGenerator();
+var type1 = typeGenerator();
+var type2 = typeGenerator();
+```
+
+The method works by getting the assembly of the `Type` type in the System namespace. It then gets all the exported types for that assembly. The returned `Func` randomly selects items from the exported types when it is ran. It removes items from the list as it goes to prevent duplicates. The `Func` will throw when there are no more types to pick from.
+
 ## Generate
 Returns a value created by `AutoFixture`.
 

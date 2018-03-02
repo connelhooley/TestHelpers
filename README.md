@@ -210,7 +210,7 @@ public class Program
         Console.ReadLine();
     }
 }
-...
+
 public class User
 {
     public int Id { get; set; }
@@ -263,7 +263,7 @@ public class Program
         Console.ReadLine();
     }
 }
-...
+
 public class TestHelperConfigurator : ITestHelperConfigurator
 {
     public void Configure(ITestHelperContext x)

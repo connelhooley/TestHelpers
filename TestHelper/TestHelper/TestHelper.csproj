@@ -2,21 +2,30 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>ConnelHooley.TestHelper</AssemblyName>
-    <RootNamespace>ConnelHooley.TestHelper</RootNamespace>
+    <AssemblyName>ConnelHooley.TestHelper.Abstractions</AssemblyName>
+    <RootNamespace>ConnelHooley.TestHelper.Abstractions</RootNamespace>
+
+    <Authors>Connel Hooley</Authors>
+    <Product>Test Helper</Product>
+    <Description>Classes to randomly generate data for unit tests. Powered by AutoFixture.</Description>
+    <Copyright>Copyright Connel Hooley 2018</Copyright>
+    <Version>0.0.1</Version>
+
+    <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>
+    <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</FileVersion>
+    <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</FileVersion>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>ConnelHooley.TestHelper</PackageId>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>
+    <PackageTags>unit testing test tests </PackageTags>
+    <PackageProjectUrl>https://github.com/connelhooley/TestHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/connelhooley/TestHelper.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="AutoFixture">
-      <Version>4.1.0</Version>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
-    <PackageReference Include="AutoFixture">
-      <Version>4.1.0</Version>
-    </PackageReference>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoFixture" Version="4.1.0" />

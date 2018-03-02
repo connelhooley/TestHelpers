@@ -148,6 +148,6 @@ namespace ConnelHooley.TestHelper
         /// Returns a function that randomly selects a Type from the System namespace.
         /// </summary>
         public Func<Type> GetRandomTypeGenerator() =>
-            _context.RandomTypeGenerator();
+            _context.GetRandomTypeGenerator();
     }
 }   

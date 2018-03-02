@@ -141,7 +141,7 @@ namespace ConnelHooley.TestHelper
             }
         }
 
-        public Func<Type> RandomTypeGenerator()
+        public Func<Type> GetRandomTypeGenerator()
         {
             var types = Assembly
                 .GetAssembly(typeof(Type))

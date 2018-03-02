@@ -83,7 +83,7 @@ var helloOrWorld = items.TakeRandomItem();
 ```
 
 ## RandomCaseString
-Randomly cases a string so that some of its letters are uppercase, and some are lower case.
+Randomly cases a string so that some of its letters are uppercase, and some are lowercase.
 
 ``` csharp
 var randomMixedCase = TestHelper.RandomCaseString("hello world");
@@ -97,7 +97,7 @@ var randomMixedCase = x.ToRandomCase();
 ```
 
 ## GenerateString
-Returns a random string made up of upper and lower case letters from the alphabet, numbers and some special characters.
+Returns a random string made up of letters from the alphabet (uppercase and lowercase), numbers and some special characters.
 
 ``` csharp
 var randomString = TestHelper.GenerateString();

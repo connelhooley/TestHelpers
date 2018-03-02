@@ -55,7 +55,7 @@ var randomNumberBetween50and100 = TestHelper.GenerateNumberBetween(50, 100);
 ```
 
 ## ChooseRandomItem
-Returns a random item from an IEnumerable.
+Returns a random item from an `IEnumerable`.
 
 ``` csharp
 var items = new[] {"hello", "world"};
@@ -70,7 +70,7 @@ var helloOrWorld = items.ChooseRandomItem();
 ```
 
 ## TakeRandomItem
-Removes a random item from a List and returns the removed item.
+Removes a random item from a `List` and returns the removed item.
 
 ``` csharp
 var items = new[] {"hello", "world"};
@@ -141,7 +141,7 @@ var helloWorldWrappedInRandomWhitespace = x.WrapStringInWhitespace();
 ```
 
 ## GenerateMany
-Runs the creator function between 2 and 100 times and returns the results in an IEnummerable.
+Runs the creator function between 2 and 100 times and returns the results in an `IEnummerable`.
 
 ``` csharp
 var randomStrings = TestHelper.GenerateMany(TestHelper.GenerateString);
@@ -180,7 +180,7 @@ To find out how to configure the `AutoFixture` instance inside the `TestHelper` 
 There are two ways of configuring the TestHelper.
 
 ### Test Helper Instances
-So far we have seen usage of the static `TestHelper` class. It is also possible to create a `TestHelperInstance` class that contains its own configuration.
+So far, we have seen usage of the static `TestHelper` class. It is also possible to create a `TestHelperInstance` class that contains its own configuration.
 
 For example:
 
@@ -211,7 +211,7 @@ public class User
 }
 ```
 
-This is useful for when a particular group of tests needs a particular configuration. The `TestHelperInstance` class has all the same methods as the static `TestHelper` class, although apart from the `Generate<T>()` method, they all just call the static `TestHelper` under the hood.
+This is useful for when a group of tests needs a particular configuration. The `TestHelperInstance` class has all the same methods as the static `TestHelper` class, although apart from the `Generate<T>()` method, they all just call the static `TestHelper` under the hood.
 
 ### Configurators
 Sometimes you always want to create a specified type the same way throughout a test project. Both the static `TestHelper` class and the `TestHelperInstance` class use reflection to look for implementations of an interface called `ITestHelperConfigurator`. These are then run to configure the test helpers.
@@ -239,7 +239,7 @@ public class TestHelperConfigurator : ITestHelperConfigurator
 }
 ```
 
-The `TestHelperInstance` loads in any `ITestHelperConfigurator` implentations and then loads in its own configuration. This means that if a `TestHelperInstance` registers a type in the action passed into its constructor, this registration will be used instead of any found in any Configurators.
+The `TestHelperInstance` loads in any `ITestHelperConfigurator` implementations and then loads in its own configuration. This means that if a `TestHelperInstance` registers a type in the action passed into its constructor, this registration will be used instead of any found in any Configurators.
 
 For example:
 
@@ -285,7 +285,7 @@ public class UpperCaseString
 }
 ```
 
-I could publish this as my `UpperCaseString` nuget package. I could then publish the following Configurator as a seperate NugetPackage called `UpperCaseString.TestHelperSupport`:
+I could publish this as my `UpperCaseString` NuGet package. I could then publish the following Configurator as a separate NuGet package called `UpperCaseString.TestHelperSupport`:
 
 ``` csharp
 public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
@@ -297,4 +297,4 @@ public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
 }
 ```
 
-The test helper support package only needs to reference the `ConnelHooley.TestHelper.Abstractions` package. Then when anyone includes a `UpperCaseString` in their proejct, they only need to install the support package and the test helper classes will pick up the configurator and successully create `UpperCaseString` types.
+The test helper support package only needs to reference the `ConnelHooley.TestHelper.Abstractions` package. Then when anyone includes a `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully create `UpperCaseString` types.

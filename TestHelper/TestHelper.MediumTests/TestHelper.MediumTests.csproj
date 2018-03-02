@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>ConnelHooley.TestHelper.MediumTests</AssemblyName>
+
+    <RootNamespace>ConnelHooley.TestHelper.MediumTests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.1.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestHelper.Abstractions\TestHelper.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelper.MediumTests.CustomTypes.csproj" />
+    <ProjectReference Include="..\TestHelper.MediumTests.TestHelperSupportExample\TestHelper.MediumTests.TestHelperSupportExample.csproj" />
+    <ProjectReference Include="..\TestHelper\TestHelper.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -3,3 +3,6 @@
 ################################################################################
 
 /TestHelper/.vs/TestHelper/v15/Server/sqlite3
+/TestHelper/.vs/TestHelper/v15
+bin
+obj

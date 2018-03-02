@@ -17,7 +17,7 @@
     <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</FileVersion>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>ConnelHooley.TestHelper</PackageId>
+    <PackageId>ConnelHooley.TestHelper.Configurators.Akka</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>

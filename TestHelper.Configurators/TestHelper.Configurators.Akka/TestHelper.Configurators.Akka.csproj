@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ConnelHooley.TestHelper.Configurators.Akka</AssemblyName>
+    <RootNamespace>ConnelHooley.TestHelper.Configurators.Akka</RootNamespace>
+
+    <Authors>Connel Hooley</Authors>
+    <Product>Akka Test Helper Configurators</Product>
+    <Description>Configurators to randomly generate Akka.NET classes</Description>
+    <Copyright>Copyright Connel Hooley 2018</Copyright>
+    <Version>1.0.0</Version>
+
+    <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>
+    <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</FileVersion>
+    <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</FileVersion>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>ConnelHooley.TestHelper</PackageId>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>
+    <PackageTags>unit testing test tests akka</PackageTags>
+    <PackageProjectUrl>https://github.com/connelhooley/TestHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/connelhooley/TestHelper.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.3.0" />
+    <PackageReference Include="ConnelHooley.TestHelper.Abstractions" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

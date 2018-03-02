@@ -1,6 +1,8 @@
 # TestHelper
 A class to randomly generate values. Useful for unit tests.
 
+> Install-Package ConnelHooley.TestHelper
+
 # Methods
 
 ## GenerateException

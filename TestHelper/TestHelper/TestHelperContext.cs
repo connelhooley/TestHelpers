@@ -140,5 +140,14 @@ namespace ConnelHooley.TestHelper
                 }
             }
         }
+
+        public Func<Type> RandomTypeGenerator()
+        {
+            var types = Assembly
+                .GetAssembly(typeof(Type))
+                .GetExportedTypes()
+                .ToList();
+            return () => TakeRandomItem(types);
+        }
     }
 }

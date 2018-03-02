@@ -143,5 +143,11 @@ namespace ConnelHooley.TestHelper
         /// <param name="valuesToExclude">Values to exclude from being returned.</param>
         public T GenerateEnum<T>(params T[] valuesToExclude) =>
             _context.GenerateEnum(valuesToExclude);
+        
+        /// <summary>
+        /// Returns a function that randomly selects a Type from the System namespace.
+        /// </summary>
+        public Func<Type> GetRandomTypeGenerator() =>
+            _context.RandomTypeGenerator();
     }
 }   

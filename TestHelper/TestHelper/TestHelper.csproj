@@ -21,7 +21,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>
-    <PackageTags>unit testing test tests </PackageTags>
+    <PackageTags>unit testing test tests</PackageTags>
     <PackageProjectUrl>https://github.com/connelhooley/TestHelper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/connelhooley/TestHelper.git</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>

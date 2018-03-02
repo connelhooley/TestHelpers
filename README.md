@@ -83,7 +83,7 @@ var helloOrWorld = items.TakeRandomItem();
 ```
 
 ## RandomCaseString
-Randomly cases a string so some of its letters and uppercase, and some are lower case.
+Randomly cases a string so that some of its letters are uppercase, and some are lower case.
 
 ``` csharp
 var randomMixedCase = TestHelper.RandomCaseString("hello world");
@@ -107,7 +107,7 @@ var randomString = TestHelper.GenerateString();
 Returns a random string made up of the chars in the given string.
 
 ``` csharp
-var randomStringMadeUpOfAbc = TestHelper.GenerateStringFrom("abc");
+var randomStringMadeUpOfNumbers = TestHelper.GenerateStringFrom(TestHelper.Numbers);
 ```
 
 ## GenerateWhitespaceString
@@ -115,6 +115,27 @@ Returns a string containing 1 to 50 spaces.
 
 ``` csharp
 var randomWhitespace = TestHelper.GenerateWhitespaceString();
+```
+
+## GenerateStringFrom
+Returns a random string made up of the chars in the given string.
+
+``` csharp
+var randomStringMadeUpOfNumbers = TestHelper.GenerateStringFrom(TestHelper.Numbers);
+```
+
+## WrapStringInWhitespace
+Returns the given string with 1 to 50 spaces prepended and appended to it.
+
+``` csharp
+var helloWorldWrappedInRandomWhitespace = TestHelper.WrapStringInWhitespace("helloworld");
+```
+
+It is also exposed as an extension method.
+
+``` csharp
+var x = "helloworld";
+var helloWorldWrappedInRandomWhitespace = x.WrapStringInWhitespace();
 ```
 
 ## GenerateMany
@@ -145,19 +166,19 @@ var randomWeekDay = TestHelper.GenerateEnum(DayOfWeek.Saturday, DayOfWeek.Sunday
 ```
 
 ## Generate
-Returns a value created by AutoFixture:
+Returns a value created by `AutoFixture`.
 
 ``` csharp
 var randomMailAddress = TestHelper.Generate<MailAddress>();
 ```
 
-To find out how to configure the AutoFixture instance inside the TestHelper please go the Configuration section.
+To find out how to configure the `AutoFixture` instance inside the `TestHelper` please go the Configuration section.
 
 ## Configuration
 There are two ways of configuring the TestHelper.
 
-## Test Helper Instances
-The examples above demonstrate the static `TestHelper` class. It is also possible to create a `TestHelperInstance` class that contains its own configuration.
+### Test Helper Instances
+So far we have seen usage of the static `TestHelper` class. It is also possible to create a `TestHelperInstance` class that contains its own configuration.
 
 For example:
 
@@ -188,10 +209,10 @@ public class User
 }
 ```
 
-This is useful for when a particular group of tests need a particular configuration.
+This is useful for when a particular group of tests needs a particular configuration. The `TestHelperInstance` class has all the same methods as the static `TestHelper` class, although apart from the `Generate<T>()` method, they all just call the static `TestHelper` under the hood.
 
-## Configurators
-Sometimes you always want to create a specified type the same way throughout a test project. Both the static `TestHelper` class and the `TestHelperInstance` class use reflection to look for implementations an interface called `ITestHelperConfigurator`. These are then run to configure the test helpers.
+### Configurators
+Sometimes you always want to create a specified type the same way throughout a test project. Both the static `TestHelper` class and the `TestHelperInstance` class use reflection to look for implementations of an interface called `ITestHelperConfigurator`. These are then run to configure the test helpers.
 
 For example:
 
@@ -242,3 +263,36 @@ public class TestHelperConfigurator : ITestHelperConfigurator
     }
 }
 ```
+
+### Authoring a Configurator
+If you create a type that should always be created in a certain way, you can create a NuGet package that references your type and includes an `ITestHelperConfigurator` implementation.
+
+For example:
+``` csharp
+public class UpperCaseString
+{
+    private readonly string _value;
+
+    public UpperCaseString(string x)
+    {
+        if(x != x.ToUpperInvariant()) throw new ArgumentException("String must be uppercase");
+        _value = x;
+    }
+
+    public static implicit operator string(UpperCaseString d) => d._value;
+}
+```
+
+I could publish this as my `UpperCaseString` nuget package. I could then publish the following Configurator as a seperate NugetPackage called `UpperCaseString.TestHelperSupport`:
+
+``` csharp
+public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
+{
+    public void Configure(ITestHelperContext x)
+    {
+        x.Register(() => new UpperCaseString(x.Generate<string>().ToUpperInvariant()));
+    }
+}
+```
+
+The test helper support package only needs to reference the `ConnelHooley.TestHelper.Abstractions` package. Then when anyone includes a `UpperCaseString` in their proejct, they only need to install the support package and the test helper classes will pick up the configurator and successully create `UpperCaseString` types.

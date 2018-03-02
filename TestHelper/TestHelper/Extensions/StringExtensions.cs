@@ -4,5 +4,8 @@
     {
         public static string ToRandomCase(this string @this) => 
             TestHelper.RandomCaseString(@this);
+    
+        public static string WrapStringInWhitespace(this string @this) =>
+            TestHelper.WrapStringInWhitespace(@this);
     }
 }

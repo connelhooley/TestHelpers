@@ -107,6 +107,11 @@ namespace ConnelHooley.TestHelper
             string.Join(
                 string.Empty,
                 Enumerable.Repeat(" ", GenerateNumberBetween(1, 50)));
+        
+        public string WrapStringInWhitespace(string value) =>
+            GenerateWhitespaceString() +
+            value +
+            GenerateWhitespaceString();
 
         public IEnumerable<T> GenerateMany<T>(Func<T> creator) =>
             Enumerable

@@ -64,6 +64,9 @@ namespace ConnelHooley.TestHelper
         public string GenerateWhitespaceString() =>
             _context.GenerateWhitespaceString();
 
+        public string WrapStringInWhitespace(string value) =>
+            _context.WrapStringInWhitespace(value);
+
         public IEnumerable<T> GenerateMany<T>(Func<T> creator) =>
             _context.GenerateMany(creator);
 

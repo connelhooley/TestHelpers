@@ -33,6 +33,13 @@ Returns a random date between 1000 days in the past and 1007 days in the future 
 var randomMonday = TestHelper.GenerateDateTimeByWeekDay(DayOfWeek.Monday);
 ```
 
+## GenerateNumber
+Returns a random number. Includes negative values.
+
+``` csharp
+var randomNumber = TestHelper.GenerateNumber();
+```
+
 ## GenerateNumberBelow
 Returns a random number below a certain value. Includes negative values.
 
@@ -85,7 +92,7 @@ var helloOrWorld = items.TakeRandomItem();
 ```
 
 ## RandomCaseString
-Randomly cases a string so that some of its letters are uppercase and some are lowercase.
+Randomly mix-cases a string so that some of its letters are uppercase and some are lowercase.
 
 ``` csharp
 var randomMixedCase = TestHelper.RandomCaseString("hello world");

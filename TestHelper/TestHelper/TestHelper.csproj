@@ -9,7 +9,7 @@
     <Product>Test Helper</Product>
     <Description>Classes to randomly generate data for unit tests. Powered by AutoFixture.</Description>
     <Copyright>Copyright Connel Hooley 2018</Copyright>
-    <Version>0.0.1</Version>
+    <Version>1.0.0</Version>
 
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>

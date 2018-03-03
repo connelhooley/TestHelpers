@@ -1,7 +1,7 @@
-# TestHelper
+# TestHelpers
 A class to randomly generate values. Useful for unit tests. Powered by [AutoFixture](https://github.com/AutoFixture/AutoFixture).
 
-> Install-Package ConnelHooley.TestHelper
+> Install-Package ConnelHooley.TestHelpers
 
 # Methods
 
@@ -315,4 +315,4 @@ public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
 }
 ```
 
-The test helper support package only needs to reference the `ConnelHooley.TestHelper.Abstractions` package. Then when anyone includes a `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully create `UpperCaseString` types.
+The test helper support package only needs to reference the `ConnelHooley.TestHelpers.Abstractions` package. Then when anyone includes a `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully create `UpperCaseString` types.

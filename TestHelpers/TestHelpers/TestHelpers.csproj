@@ -6,10 +6,10 @@
     <RootNamespace>ConnelHooley.TestHelpers</RootNamespace>
 
     <Authors>Connel Hooley</Authors>
-    <Product>Test Helper</Product>
+    <Product>Test Helpers</Product>
     <Description>Classes to randomly generate data for unit tests. Powered by AutoFixture.</Description>
     <Copyright>Copyright Connel Hooley 2018</Copyright>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
 
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>
@@ -22,8 +22,8 @@
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>
     <PackageTags>unit testing test tests</PackageTags>
-    <PackageProjectUrl>https://github.com/connelhooley/TestHelper</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/connelhooley/TestHelper.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/connelhooley/TestHelpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/connelhooley/TestHelpers.git</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 

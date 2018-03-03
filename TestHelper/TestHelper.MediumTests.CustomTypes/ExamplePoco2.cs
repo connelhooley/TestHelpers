@@ -1,4 +1,4 @@
-﻿namespace ConnelHooley.TestHelper.MediumTests.CustomTypes
+﻿namespace ConnelHooley.TestHelpers.MediumTests.CustomTypes
 {
     public class ExamplePoco2
     {

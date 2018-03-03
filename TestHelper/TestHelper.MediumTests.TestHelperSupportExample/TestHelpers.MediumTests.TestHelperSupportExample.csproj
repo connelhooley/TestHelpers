@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ConnelHooley.TestHelpers.MediumTests.TestHelperSupportExample</AssemblyName>
+    <RootNamespace>ConnelHooley.TestHelpers.MediumTests.TestHelperSupportExample</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestHelper.Abstractions\TestHelpers.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
+  </ItemGroup>
+
+</Project>

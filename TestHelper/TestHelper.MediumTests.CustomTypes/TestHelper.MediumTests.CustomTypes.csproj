@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>ConnelHooley.TestHelper.MediumTests.CustomTypes</RootNamespace>
-    <AssemblyName>ConnelHooley.TestHelper.MediumTests.CustomTypes</AssemblyName>
-  </PropertyGroup>
-
-</Project>

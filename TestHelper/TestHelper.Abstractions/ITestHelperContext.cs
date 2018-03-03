@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConnelHooley.TestHelper.Abstractions
+namespace ConnelHooley.TestHelpers.Abstractions
 {
     public interface ITestHelperContext
     {

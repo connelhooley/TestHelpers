@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using AutoFixture;
-using ConnelHooley.TestHelper.Abstractions;
+using ConnelHooley.TestHelpers.Abstractions;
 
-namespace ConnelHooley.TestHelper
+namespace ConnelHooley.TestHelpers
 {
     internal sealed class TestHelperContext : ITestHelperContext
     {

@@ -1,7 +1,7 @@
-﻿using ConnelHooley.TestHelper.Abstractions;
-using ConnelHooley.TestHelper.MediumTests.CustomTypes;
+﻿using ConnelHooley.TestHelpers.Abstractions;
+using ConnelHooley.TestHelpers.MediumTests.CustomTypes;
 
-namespace ConnelHooley.TestHelper.MediumTests.TestHelperSupportExample
+namespace ConnelHooley.TestHelpers.MediumTests.TestHelperSupportExample
 {
     public class ExamplePoco2TestHelperConfigurator : ITestHelperConfigurator
     {

@@ -1,8 +1,7 @@
-﻿// ReSharper disable InconsistentNaming
+﻿using System.Collections.Generic;
+// ReSharper disable InconsistentNaming
 
-using System.Collections.Generic;
-
-namespace ConnelHooley.TestHelper.Extensions
+namespace ConnelHooley.TestHelpers.Extensions
 {
     public static class IEnumerableExtensions
     {

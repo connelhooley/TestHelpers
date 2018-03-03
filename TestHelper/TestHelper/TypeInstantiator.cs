@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ConnelHooley.TestHelper
+namespace ConnelHooley.TestHelpers
 {
     internal static class TypeInstantiator
     {

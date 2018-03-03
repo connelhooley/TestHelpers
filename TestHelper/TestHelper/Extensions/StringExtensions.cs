@@ -1,4 +1,4 @@
-﻿namespace ConnelHooley.TestHelper.Extensions
+﻿namespace ConnelHooley.TestHelpers.Extensions
 {
     public static class StringExtensions
     {

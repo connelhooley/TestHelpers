@@ -1,9 +1,9 @@
 ﻿using System;
-using ConnelHooley.TestHelper.MediumTests.CustomTypes;
+using ConnelHooley.TestHelpers.MediumTests.CustomTypes;
 using FluentAssertions;
 using Xunit;
 
-namespace ConnelHooley.TestHelper.MediumTests.TestHelperInstanceTests
+namespace ConnelHooley.TestHelpers.MediumTests.TestHelperInstanceTests
 {
     public class Generate
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConnelHooley.TestHelper.Abstractions;
+using ConnelHooley.TestHelpers.Abstractions;
 
-namespace ConnelHooley.TestHelper
+namespace ConnelHooley.TestHelpers
 {
     public sealed class TestHelperInstance
     {

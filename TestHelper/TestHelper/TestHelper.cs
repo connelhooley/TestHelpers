@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConnelHooley.TestHelper
+namespace ConnelHooley.TestHelpers
 {
     public static class TestHelper
     {

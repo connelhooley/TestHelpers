@@ -5,9 +5,9 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>ConnelHooley.TestHelper.MediumTests</AssemblyName>
+    <AssemblyName>ConnelHooley.TestHelpers.MediumTests</AssemblyName>
 
-    <RootNamespace>ConnelHooley.TestHelper.MediumTests</RootNamespace>
+    <RootNamespace>ConnelHooley.TestHelpers.MediumTests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestHelper.Abstractions\TestHelper.Abstractions.csproj" />
-    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelper.MediumTests.CustomTypes.csproj" />
-    <ProjectReference Include="..\TestHelper.MediumTests.TestHelperSupportExample\TestHelper.MediumTests.TestHelperSupportExample.csproj" />
-    <ProjectReference Include="..\TestHelper\TestHelper.csproj" />
+    <ProjectReference Include="..\TestHelper.Abstractions\TestHelpers.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
+    <ProjectReference Include="..\TestHelper.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj" />
+    <ProjectReference Include="..\TestHelper\TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>

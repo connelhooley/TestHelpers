@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
-    <AssemblyName>ConnelHooley.TestHelper.Abstractions</AssemblyName>
-    <RootNamespace>ConnelHooley.TestHelper.Abstractions</RootNamespace>
+    <AssemblyName>ConnelHooley.TestHelpers.Abstractions</AssemblyName>
+    <RootNamespace>ConnelHooley.TestHelpers.Abstractions</RootNamespace>
     
     <Authors>Connel Hooley</Authors>
     <Product>Test Helper Abstractions</Product>
     <Description>Interfaces used to configure TestHelper from other projects</Description>
     <Copyright>Copyright Connel Hooley 2018</Copyright>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
     
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>
@@ -17,7 +17,7 @@
     <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</FileVersion>
     
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>ConnelHooley.TestHelper.Abstractions</PackageId>
+    <PackageId>ConnelHooley.TestHelpers.Abstractions</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>

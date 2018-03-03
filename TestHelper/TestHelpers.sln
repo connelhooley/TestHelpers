@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelper", "TestHelper\TestHelper.csproj", "{38A4C00E-4391-450D-A861-6BC96B6794D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers", "TestHelper\TestHelpers.csproj", "{38A4C00E-4391-450D-A861-6BC96B6794D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelper.Abstractions", "TestHelper.Abstractions\TestHelper.Abstractions.csproj", "{D392E8EF-7E0C-44C9-ACA0-515994987460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.Abstractions", "TestHelper.Abstractions\TestHelpers.Abstractions.csproj", "{D392E8EF-7E0C-44C9-ACA0-515994987460}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelper.MediumTests", "TestHelper.MediumTests\TestHelper.MediumTests.csproj", "{772D3DC1-6C33-45C4-9B36-6168FC7AFF3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests", "TestHelper.MediumTests\TestHelpers.MediumTests.csproj", "{772D3DC1-6C33-45C4-9B36-6168FC7AFF3C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelper.MediumTests.TestHelperSupportExample", "TestHelper.MediumTests.TestHelperSupportExample\TestHelper.MediumTests.TestHelperSupportExample.csproj", "{EDA42A2A-FC65-4DE1-8A27-B164D34740E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.TestHelperSupportExample", "TestHelper.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj", "{EDA42A2A-FC65-4DE1-8A27-B164D34740E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelper.MediumTests.CustomTypes", "TestHelper.MediumTests.CustomTypes\TestHelper.MediumTests.CustomTypes.csproj", "{03E1EB63-07C4-4212-AAC5-97DF78DBAC59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.CustomTypes", "TestHelper.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj", "{03E1EB63-07C4-4212-AAC5-97DF78DBAC59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61F5CEB4-E5D8-4DCB-831C-10FD252D5D1C}"
 	ProjectSection(SolutionItems) = preProject

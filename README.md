@@ -183,6 +183,13 @@ You can also specify values to exclude:
 var randomWeekDay = TestHelper.GenerateEnum(DayOfWeek.Saturday, DayOfWeek.Sunday);
 ```
 
+## GenerateGuid
+Returns a random GUID.
+
+``` csharp
+var randomGuid = TestHelper.GenerateGuid();
+```
+
 ## GetRandomTypeGenerator
 Returns a function that in turn returns random types.
 

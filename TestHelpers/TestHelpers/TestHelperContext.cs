@@ -141,6 +141,9 @@ namespace ConnelHooley.TestHelpers
             }
         }
 
+        public Guid GenerateGuid() => 
+            Guid.NewGuid();
+
         public Func<Type> GetRandomTypeGenerator()
         {
             var types = Assembly

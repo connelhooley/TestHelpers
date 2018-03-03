@@ -5,6 +5,15 @@ A class to randomly generate values. Useful for unit tests. Powered by [AutoFixt
 
 # Methods
 
+## Generate
+Returns a value created by `AutoFixture`.
+
+``` csharp
+var randomMailAddress = TestHelper.Generate<MailAddress>();
+```
+
+To find out how to configure the `AutoFixture` instance inside the `TestHelper` please go the [Configuration](#configuration) section.
+
 ## GenerateException
 Returns an exception with a randomly generated message.
 
@@ -184,15 +193,6 @@ var type2 = typeGenerator();
 ```
 
 The method works by getting the assembly of the `Type` type in the System namespace. It then gets all the exported types for that assembly. The returned `Func` randomly selects items from the exported types when it is ran. It removes items from the list as it goes to prevent duplicates. The `Func` will throw when there are no more types to pick from.
-
-## Generate
-Returns a value created by `AutoFixture`.
-
-``` csharp
-var randomMailAddress = TestHelper.Generate<MailAddress>();
-```
-
-To find out how to configure the `AutoFixture` instance inside the `TestHelper` please go the [Configuration](#configuration) section.
 
 ## Configuration
 There are two ways of configuring the TestHelper.

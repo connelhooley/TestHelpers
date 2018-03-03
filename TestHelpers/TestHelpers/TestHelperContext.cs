@@ -28,6 +28,7 @@ namespace ConnelHooley.TestHelpers
             Register(GenerateException);
             Register(GenerateDateTime);
             Register(GenerateNumber);
+            Register(GenerateGuid);
 
             foreach (var configurator in TypeInstantiator.InstantiateAll<ITestHelperConfigurator>())
             {

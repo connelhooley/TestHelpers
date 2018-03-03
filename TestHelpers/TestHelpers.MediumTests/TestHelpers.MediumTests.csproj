@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestHelper.Abstractions\TestHelpers.Abstractions.csproj" />
-    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
-    <ProjectReference Include="..\TestHelper.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj" />
-    <ProjectReference Include="..\TestHelper\TestHelpers.csproj" />
+    <ProjectReference Include="..\TestHelpers.Abstractions\TestHelpers.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelpers.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
+    <ProjectReference Include="..\TestHelpers.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj" />
+    <ProjectReference Include="..\TestHelpers\TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>

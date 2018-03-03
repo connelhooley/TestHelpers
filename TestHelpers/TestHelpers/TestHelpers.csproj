@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestHelper.Abstractions\TestHelpers.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelpers.Abstractions\TestHelpers.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

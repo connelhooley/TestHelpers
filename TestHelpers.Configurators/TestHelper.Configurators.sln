@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper.Configurators.Akka", "TestHelper.Configurators.Akka\TestHelper.Configurators.Akka.csproj", "{CB5B10FF-B7FE-45CB-8EA2-D023A49CBC90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper.Configurators.Akka", "TestHelpers.Configurators.Akka\TestHelpers.Configurators.Akka.csproj", "{CB5B10FF-B7FE-45CB-8EA2-D023A49CBC90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

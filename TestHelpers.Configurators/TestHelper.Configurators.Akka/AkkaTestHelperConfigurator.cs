@@ -1,8 +1,8 @@
 ﻿using System;
 using Akka.Actor;
-using ConnelHooley.TestHelper.Abstractions;
+using ConnelHooley.TestHelpers.Abstractions;
 
-namespace ConnelHooley.TestHelper.Configurators.Akka
+namespace ConnelHooley.TestHelpers.Configurators.Akka
 {
     public class AkkaTestHelperConfigurator : ITestHelperConfigurator
     {

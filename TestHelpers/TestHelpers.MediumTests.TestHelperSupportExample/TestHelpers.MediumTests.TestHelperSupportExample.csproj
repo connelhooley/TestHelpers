@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestHelper.Abstractions\TestHelpers.Abstractions.csproj" />
-    <ProjectReference Include="..\TestHelper.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
+    <ProjectReference Include="..\TestHelpers.Abstractions\TestHelpers.Abstractions.csproj" />
+    <ProjectReference Include="..\TestHelpers.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
   </ItemGroup>
 
 </Project>

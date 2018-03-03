@@ -20,6 +20,10 @@ namespace ConnelHooley.TestHelper
             configInstance(_context);
         }
 
+        /// <summary>
+        /// Returns an object created by AutoFixture
+        /// </summary>
+        /// <returns></returns>
         public T Generate<T>() => _context.Generate<T>();
 
         /// <summary>

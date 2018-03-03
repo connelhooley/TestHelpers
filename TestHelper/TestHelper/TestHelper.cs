@@ -12,7 +12,11 @@ namespace ConnelHooley.TestHelper
         public const string SpecialChars = TestHelperContext.SpecialChars;
         
         private static readonly TestHelperContext Context = new TestHelperContext();
-        
+
+        /// <summary>
+        /// Returns an object created by AutoFixture
+        /// </summary>
+        /// <returns></returns>
         public static T Generate<T>() => Context.Generate<T>();
 
         /// <summary>

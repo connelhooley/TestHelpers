@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
-    <AssemblyName>ConnelHooley.TestHelpers.Configurators.Akka</AssemblyName>
-    <RootNamespace>ConnelHooley.TestHelpers.Configurators.Akka</RootNamespace>
+    <AssemblyName>ConnelHooley.Akka.TestHelperSupport</AssemblyName>
+    <RootNamespace>ConnelHooley.Akka.TestHelperSupport</RootNamespace>
 
     <Authors>Connel Hooley</Authors>
     <Product>Akka Test Helper Configurators</Product>
@@ -17,13 +17,13 @@
     <FileVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</FileVersion>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>ConnelHooley.TestHelpers.Configurators.Akka</PackageId>
+    <PackageId>ConnelHooley.Akka.TestHelperSupport</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/1859799</PackageIconUrl>
     <PackageTags>unit testing test tests akka</PackageTags>
-    <PackageProjectUrl>https://github.com/connelhooley/TestHelper</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/connelhooley/TestHelper.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/connelhooley/TestHelpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/connelhooley/TestHelpers.git</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 

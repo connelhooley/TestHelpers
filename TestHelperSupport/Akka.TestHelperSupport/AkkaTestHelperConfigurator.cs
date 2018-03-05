@@ -2,7 +2,7 @@
 using Akka.Actor;
 using ConnelHooley.TestHelpers.Abstractions;
 
-namespace ConnelHooley.TestHelpers.Configurators.Akka
+namespace ConnelHooley.Akka.TestHelperSupport
 {
     public class AkkaTestHelperConfigurator : ITestHelperConfigurator
     {

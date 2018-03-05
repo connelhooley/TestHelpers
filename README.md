@@ -135,13 +135,6 @@ Returns a string containing 1 to 50 spaces.
 var randomWhitespace = TestHelper.GenerateWhitespaceString();
 ```
 
-## GenerateStringFrom
-Returns a random string made up of the chars in the given string.
-
-``` csharp
-var randomStringMadeUpOfNumbers = TestHelper.GenerateStringFrom(TestHelper.Numbers);
-```
-
 ## WrapStringInWhitespace
 Returns the given string with 1 to 50 spaces prepended and appended to it.
 
@@ -239,13 +232,13 @@ public class User
 This is useful for when a group of tests needs a particular configuration. The `TestHelperInstance` class has all the same methods as the static `TestHelper` class, although apart from the `Generate<T>()` method, they all just call the static `TestHelper` under the hood.
 
 ### Configurators
-Sometimes you always want to create a specified type the same way throughout a test project, or even all your test projects. To do this both the static `TestHelper` class and the `TestHelperInstance` scans for an interface called `ITestHelperConfigurator`:
+Sometimes you always want to create a specified type the same way throughout a test project, or even all your test projects. To do this both the static `TestHelper` class and the `TestHelperInstance` scan for an interface called `ITestHelperConfigurator`:
 
 - The test helpers load any DLLs that end with `.TestHelperSupport.dll`.
-- It then queries all the currently loaded assemblies for implementations of `ITestHelperConfigurator`.
+- They then query all the currently loaded assemblies for implementations of `ITestHelperConfigurator`.
 - These Configurators are then run to configure the test helpers.
 
-An example of using a Configurator would like:
+An example of what using a Configurator would like:
 
 ``` csharp
 public class Program
@@ -329,4 +322,4 @@ public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
 
 Calling it `UpperCaseString.TestHelperSupport` ensures that the test helper classes load in the assembly even if no other code references it.
 
-The test helper support package only needs to reference the `ConnelHooley.TestHelpers.Abstractions` package. Then when anyone includes a `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully create `UpperCaseString` types.
+The test helper support package only needs to reference the `ConnelHooley.TestHelpers.Abstractions` package. Then when anyone uses `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully generate `UpperCaseString` types.

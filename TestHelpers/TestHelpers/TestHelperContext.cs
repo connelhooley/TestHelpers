@@ -24,7 +24,7 @@ namespace ConnelHooley.TestHelpers
             _fixture = new Fixture();
 
             Register(GenerateBool);
-            Register(GenerateString);
+            Register(() =>GenerateStringFrom(AlphaNumeric));
             Register(GenerateException);
             Register(GenerateDateTime);
             Register(GenerateNumber);
@@ -144,7 +144,7 @@ namespace ConnelHooley.TestHelpers
 
         public Guid GenerateGuid() => 
             Guid.NewGuid();
-
+        
         public Func<Type> GetRandomTypeGenerator()
         {
             var types = Assembly

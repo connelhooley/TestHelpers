@@ -322,4 +322,4 @@ public class UpperCaseStringTestHelperConfigurator : ITestHelperConfigurator
 
 Calling it `UpperCaseString.TestHelperSupport` ensures that the test helper classes load in the assembly even if no other code references it.
 
-The test helper support package only needs to reference the `ConnelHooley.TestHelpers.Abstractions` package. Then when anyone includes a `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully create `UpperCaseString` types.
+The test helper support package only needs to reference the `ConnelHooley.TestHelpers.Abstractions` package. Then when anyone uses `UpperCaseString` in their project, they only need to install the support package and the test helper classes will pick up the configurator and successfully generate `UpperCaseString` types.

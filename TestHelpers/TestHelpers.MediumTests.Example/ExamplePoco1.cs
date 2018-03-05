@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConnelHooley.TestHelpers.MediumTests.CustomTypes
+namespace ConnelHooley.TestHelpers.MediumTests.Example
 {
     public class ExamplePoco1
     {

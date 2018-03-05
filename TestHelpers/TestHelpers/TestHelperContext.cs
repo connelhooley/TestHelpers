@@ -14,10 +14,10 @@ namespace ConnelHooley.TestHelpers
         public const string Numbers = "0123456789";
         public const string AlphaNumeric = AlphabetLower + AlphabetUpper + Numbers;
         public const string SpecialChars = "!\"£$%^&*()_+=-{}][:';'<>?,./|\\";
-
+        
         private readonly Fixture _fixture;
         private readonly Random _random;
-
+        
         public TestHelperContext()
         {
             _random = new Random();
@@ -30,7 +30,7 @@ namespace ConnelHooley.TestHelpers
             Register(GenerateNumber);
             Register(GenerateGuid);
 
-            foreach (var configurator in TypeInstantiator.InstantiateAll<ITestHelperConfigurator>())
+            foreach (var configurator in TestHelperConfiguratorInstantiator.Configurators)
             {
                 configurator.Configure(this);
             }

@@ -1,5 +1,5 @@
 ﻿using System;
-using ConnelHooley.TestHelpers.MediumTests.CustomTypes;
+using ConnelHooley.TestHelpers.MediumTests.Example;
 using FluentAssertions;
 using Xunit;
 
@@ -8,7 +8,7 @@ namespace ConnelHooley.TestHelpers.MediumTests.TestHelperInstanceTests
     public class Generate
     {
         [Fact]
-        public void TestHelper_GenerateTypesFromConfigurators()
+        public void TestHelperInstance_GenerateTypesFromConfiguratorsInTestHelperSupportAssemblies()
         {
             var sut = new TestHelperInstance(context => { });
 
@@ -20,7 +20,17 @@ namespace ConnelHooley.TestHelpers.MediumTests.TestHelperInstanceTests
         }
 
         [Fact]
-        public void TestHelper_GenerateTypesInstanceConfig()
+        public void TestHelperInstance_GenerateTypesFromConfiguratorsInExecutingAssembly()
+        {
+            var sut = new TestHelperInstance(context => { });
+
+            var result = sut.Generate<DateTime>();
+
+            result.Should().Be(DateTime.MaxValue);
+        }
+
+        [Fact]
+        public void TestHelperInstance_GenerateTypesInstanceConfig()
         {
             var sut = new TestHelperInstance(context =>
             {

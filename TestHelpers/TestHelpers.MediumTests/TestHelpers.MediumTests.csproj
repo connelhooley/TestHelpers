@@ -20,8 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestHelpers.Abstractions\TestHelpers.Abstractions.csproj" />
-    <ProjectReference Include="..\TestHelpers.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj" />
-    <ProjectReference Include="..\TestHelpers.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj" />
+    <ProjectReference Include="..\TestHelpers.MediumTests.Example.TestHelperSupport\TestHelpers.MediumTests.Example.TestHelperSupport.csproj" />
+    <ProjectReference Include="..\TestHelpers.MediumTests.Example\TestHelpers.MediumTests.Example.csproj" />
     <ProjectReference Include="..\TestHelpers\TestHelpers.csproj" />
   </ItemGroup>
 

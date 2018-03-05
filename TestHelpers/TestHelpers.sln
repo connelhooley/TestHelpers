@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.Abstractions", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests", "TestHelpers.MediumTests\TestHelpers.MediumTests.csproj", "{772D3DC1-6C33-45C4-9B36-6168FC7AFF3C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.TestHelperSupportExample", "TestHelpers.MediumTests.TestHelperSupportExample\TestHelpers.MediumTests.TestHelperSupportExample.csproj", "{EDA42A2A-FC65-4DE1-8A27-B164D34740E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.Example.TestHelperSupport", "TestHelpers.MediumTests.Example.TestHelperSupport\TestHelpers.MediumTests.Example.TestHelperSupport.csproj", "{EDA42A2A-FC65-4DE1-8A27-B164D34740E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.CustomTypes", "TestHelpers.MediumTests.CustomTypes\TestHelpers.MediumTests.CustomTypes.csproj", "{03E1EB63-07C4-4212-AAC5-97DF78DBAC59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers.MediumTests.Example", "TestHelpers.MediumTests.Example\TestHelpers.MediumTests.Example.csproj", "{03E1EB63-07C4-4212-AAC5-97DF78DBAC59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61F5CEB4-E5D8-4DCB-831C-10FD252D5D1C}"
 	ProjectSection(SolutionItems) = preProject

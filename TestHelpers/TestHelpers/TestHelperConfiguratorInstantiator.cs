@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using ConnelHooley.TestHelpers.Abstractions;
-// ReSharper disable EmptyGeneralCatchClause
 
 namespace ConnelHooley.TestHelpers
 {
@@ -25,7 +24,17 @@ namespace ConnelHooley.TestHelpers
             Configurators = AppDomain
                 .CurrentDomain
                 .GetAssemblies()
-                .SelectMany(a => a.GetTypes()) // Get all types from all assemblies
+                .SelectMany(a =>
+                {
+                    try
+                    {
+                        return a.GetTypes();
+                    }
+                    catch
+                    {
+                        return Type.EmptyTypes;
+                    }
+                }) // Get all types from all assemblies
                 .Where(t => typeToInstantiate.IsAssignableFrom(t)) // Filter out types that do not implement ITestHelperConfigurator
                 .Where(t => !t.IsInterface) // Filter out types that are interfaces
                 .Where(t => !t.IsAbstract) // Filter out types that are abstract classes

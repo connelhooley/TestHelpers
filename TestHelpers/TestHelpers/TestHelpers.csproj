@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
@@ -9,7 +9,7 @@
     <Product>Test Helpers</Product>
     <Description>Classes to randomly generate data for unit tests. Powered by AutoFixture.</Description>
     <Copyright>Copyright Connel Hooley 2018</Copyright>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
 
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>

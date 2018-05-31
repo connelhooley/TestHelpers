@@ -28,7 +28,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoFixture" Version="4.1.0" />
+    <PackageReference Include="AutoFixture" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>

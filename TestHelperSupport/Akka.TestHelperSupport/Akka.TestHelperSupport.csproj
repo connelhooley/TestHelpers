@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
@@ -9,7 +9,7 @@
     <Product>Akka Test Helper Configurators</Product>
     <Description>Configurators to randomly generate Akka.NET classes</Description>
     <Copyright>Copyright Connel Hooley 2018</Copyright>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
 
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' == '' ">1.0.0.0</AssemblyVersion>
     <AssemblyVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</AssemblyVersion>
